@@ -25,6 +25,7 @@ name = "polaroid";
 
 dbms {
     name = 'db0';
+    ipAddress = "192.168.1.121";
     schema { 
         name = 'polaroid';
         table {

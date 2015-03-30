@@ -16,24 +16,16 @@
  */
 package com.speedment.examples.polaroidserver;
 
-import com.speedment.orm.code.model.java.MainGenerator;
-import com.speedment.orm.config.model.Project;
-import com.speedment.orm.config.model.impl.utils.GroovyParser;
-import java.io.IOException;
-import java.nio.file.Paths;
+import com.speedment.orm.gui.MainApp;
+import static javafx.application.Application.launch;
 
 /**
  *
  * @author Emil Forslund
  */
-public class Generate {
+public class Gui  {
 
-    /**
-     * @param args the command line arguments
-     * @throws java.io.IOException
-     */
-    public static void main(String[] args) throws IOException {
-        final Project p = GroovyParser.projectFromGroovy(Paths.get("src/main/groovy/", "speedment.groovy"));
-        new MainGenerator().accept(p);
+    public static void main(String[] args) {
+        launch(MainApp.class);
     }
 }
